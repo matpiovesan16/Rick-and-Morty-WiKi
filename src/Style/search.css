@@ -1,0 +1,29 @@
+:root{
+    --colorDos: rgba(60,62,68,1);
+    --colorUno:rgba(39,43,51, 1);
+    --colorTres: rgb(245,245,245);
+  }
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+form>input{
+    width: 250px;
+    height: 40px;
+    background-color: var(--colorTres);
+    color: var(--colorUno);
+    font-size: 25px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 20px 1px #000;
+    border-color: var(--colorTres);
+
+}
+
+input:focus-visible{
+    border: 1px solid red;
+}

@@ -1,0 +1,62 @@
+:root{
+    --colorDos: rgba(60,62,68,1);
+    --colorUno:rgba(39,43,51, 1);
+    --colorTres: rgb(245,245,245);
+  }
+
+  .btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 20px;
+    list-style: none;
+    padding: 20px;
+  }
+
+  .btn{
+    cursor: pointer;
+    background-color: var(--colorDos);
+    color: var(--colorTres);
+    font-size: 20px;
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 10px 20px 1px #000;
+  }
+
+  .btn:hover{
+    background-color: rgb(117, 118, 124);
+  }
+
+  .li{
+    list-style: none;
+    background-color: var(--colorDos);
+    font-weight: bold;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 5px 10px 20px 1px #000;
+  }
+
+.li:hover{
+        background-color: rgb(117, 118, 124);
+}
+
+.active{
+    background-color: rgb(117, 118, 124);
+    color:  rgb(254, 157, 46);
+
+}
