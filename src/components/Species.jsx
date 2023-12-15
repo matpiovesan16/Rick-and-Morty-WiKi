@@ -8,7 +8,7 @@ import '../Style/FirstAccordion.css'
 import FilterBtn from './FilterBtn';
 
 export default function Species({setPageNumber, setSpecies}) {
-    let specie = ["Human", "Alien", "Humanoid", "Poopybuthole", "Unknown", "Mythological", "Animal", "Disease", "Robot", "Cronenberg", "Planet", ];
+    let specie = ["Human", "Alien", "Humanoid", "Poopybutthole", "Unknown", "Mythological", "Animal", "Disease", "Robot", "Cronenberg", "Planet", ];
   return (
     <div className='containerAccordion'>
 
