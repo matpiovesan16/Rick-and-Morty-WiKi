@@ -10,9 +10,12 @@ function App() {
   const [pageNumber, setPageNumber] = useState(1);
   const [dataInfo, setDataInfo] = useState(null);
   const [search, setSearch] = useState("");
-  console.log(pageNumber);
+  const [filterStatus, setFilterStatus] = useState("");
+  const [filterGender, setFilterGender] = useState("");
+  const [filterSpecies, setFilterSpecies] = useState("");
+
   
-  let api = `https://rickandmortyapi.com/api/character/?page=+${pageNumber}&name=${search}`;
+  let api = `https://rickandmortyapi.com/api/character/?page=+${pageNumber}&name=${search}&status=${filterStatus}&gender=${filterGender}&species=${filterSpecies}`;
 
   useEffect(() => {
       const fetchData = async () => {
@@ -32,10 +35,10 @@ function App() {
     <main>
       <h1 className="titulo">The Rick and Morty WiKi</h1>
       <Search setSearch={setSearch} setPageNumber={setPageNumber}/>
-      <Filter></Filter>
-
+      <div className="containerMain">
+      <Filter setStatus={setFilterStatus} setPageNumber={setPageNumber} setGender={setFilterGender} setSpecies ={setFilterSpecies} clearFilter={""}></Filter>
       <Card data={dataResults}></Card>
-
+      </div>
       <Button setPageNumber={setPageNumber} pageNumber={pageNumber} dataInfo={dataInfo}></Button>
     </main>
   );

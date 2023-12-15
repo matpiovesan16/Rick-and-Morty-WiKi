@@ -13,7 +13,7 @@ form{
 }
 
 form>input{
-    width: 250px;
+    width: 50%;
     height: 40px;
     background-color: var(--colorTres);
     color: var(--colorUno);
@@ -22,8 +22,4 @@ form>input{
     box-shadow: 5px 10px 20px 1px #000;
     border-color: var(--colorTres);
 
-}
-
-input:focus-visible{
-    border: 1px solid red;
 }
