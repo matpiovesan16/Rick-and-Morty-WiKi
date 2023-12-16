@@ -1,0 +1,45 @@
+:root{
+    --colorDos: rgba(60,62,68,1);
+    --colorUno:rgba(39,43,51, 1);
+    --colorTres: rgb(245,245,245);
+  }
+
+  .navBarContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: var(--colorDos);
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .containerList{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .containerList>a{
+    list-style: none;
+    color: var(--colorTres);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .containerList>a:hover{
+    color: rgb(254, 157, 46);
+  }
+
+  .active{
+    border-bottom: 3px solid rgb(254, 157, 46);
+    color: rgb(254, 157, 46) !important;
+  }
+
+  a{
+    color: var(--colorTres);
+    text-decoration: none;
+    padding: 10px;
+  }

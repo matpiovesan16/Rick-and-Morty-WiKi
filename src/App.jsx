@@ -4,8 +4,29 @@ import { useEffect, useState } from "react";
 import { Button } from "./components/Button";
 import { Search } from "./components/Search";
 import { Filter } from "./components/Filter";
+import { NavBar } from "./components/NavBar";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom"; 
+import { Episodes } from "./Pages/Episodes";
+import { Location } from "./Pages/Location";
 
-function App() {
+
+function App(){
+  return(
+    <Router>
+      <div className="App">
+        <NavBar/>
+      </div>
+
+      <Routes>
+        <Route path="/Rick-and-Morty-WiKi/characters" element={<Home/>}/>
+        <Route path="/Rick-and-Morty-WiKi/episodes" element={<Episodes/>}/>
+        <Route path="/Rick-and-Morty-WiKi/location" element={<Location/>}></Route>
+      </Routes>
+    </Router>
+  )
+}
+
+function Home() {
   const [dataResults, setData] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
   const [dataInfo, setDataInfo] = useState(null);
@@ -33,7 +54,7 @@ function App() {
 
   return (
     <main>
-      <h1 className="titulo">The Rick and Morty WiKi</h1>
+      <h1 className="tituloCharacters">Characters</h1>
       <Search setSearch={setSearch} setPageNumber={setPageNumber}/>
       <div className="containerMain">
       <Filter setStatus={setFilterStatus} setPageNumber={setPageNumber} setGender={setFilterGender} setSpecies ={setFilterSpecies} clearFilter={""}></Filter>

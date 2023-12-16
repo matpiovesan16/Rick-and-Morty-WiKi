@@ -31,7 +31,7 @@ export const Button = ({setPageNumber,pageNumber,dataInfo})=>{
         nextClassName='btn'
         previousClassName='btn'
         pageClassName='li'
-        activeClassName='active'
+        activeClassName='activePaginate'
         onPageChange={(data) =>{
         setPageNumber(data.selected + 1)
         }}></ReactPaginate>

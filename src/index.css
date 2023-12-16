@@ -122,6 +122,28 @@ h4{
 
 }
 
+.tituloEpisodes{
+  text-align: center;
+}
+
+.tituloEpisodes>h1>span{
+  color:rgb(254, 157, 46);
+}
+.tituloCharacters{
+  text-align: center;
+  font-weight: bold;
+}
+
+.btnNavBar{
+  padding: 15px;
+  display: none;
+  cursor: pointer;
+  font-size: 25px;
+
+}
+.btnNavBar:hover{
+  color:rgb(254, 157, 46);
+}
 
 
  @media screen and  (max-width: 800px){
@@ -141,6 +163,34 @@ h4{
     grid-template-rows: 200px 1fr;
     gap: 20px;
   }
+  .containerList{
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    width: 100% !important;
+    background-color: var(--colorDos);
+    height: 200px;
+    z-index: 10;
+    transform: translateY(-500px);
+    transition: all 0.5s ease-in;
+  }
+
+  .btnNavBar{
+    display: flex;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  .activeMenu{
+    transform: translateY(0px);
+
+  }
+
+
+
+
   
   
  }

@@ -55,8 +55,8 @@
         background-color: rgb(117, 118, 124);
 }
 
-.active{
+.activePaginate{
     background-color: rgb(117, 118, 124);
-    color:  rgb(254, 157, 46);
+    color:  rgb(254, 157, 46) !important;
 
 }
